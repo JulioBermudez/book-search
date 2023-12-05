@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import {
   Container,
   Card,
@@ -44,6 +44,7 @@ const [RemoveBook] = useMutation(REMOVE_BOOK, {
     }
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const {data} = await RemoveBook({variables:{bookId}});
       
 
